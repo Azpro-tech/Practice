@@ -8,12 +8,6 @@ address_space = ["10.0.0.0/16"]
 
 terraform {
   backend "azurerm" {}
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "4.38.1"
-    }
-  }
 }
 
 terraform {
