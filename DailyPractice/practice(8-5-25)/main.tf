@@ -6,7 +6,7 @@ rg_name = "azim-rg"
 address_space = ["10.0.0.0/16"]
 }
 
-module "subnet" {
+module "subnet1" {
   source = "../../module/subnet"
   subnet_name = "frontend-subnet"
   rg_name = "azim-rg"
@@ -14,7 +14,7 @@ module "subnet" {
   address_prefixes = ["10.0.1.0/24"]
 }
 
-module "subnet" {
+module "subnet2" {
   source = "../../module/subnet"
   subnet_name = "backend-subnet"
   rg_name = "azim-rg"
