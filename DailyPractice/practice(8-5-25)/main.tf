@@ -6,6 +6,8 @@ rg_name = "azim-rg"
 address_space = ["10.0.0.0/16"]
 }
 
+backend "azurerm" {}
+
 terraform {
   required_providers {
     azurerm = {
